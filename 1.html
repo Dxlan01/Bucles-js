@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Ingrese el consumo de su vivienda: "));
+        if(n<=100){
+            alert("EL consumo de su vivienda es de "+n+"kWh lo que da un consumo bajo");
+        }else if(n>=101 && n<300){
+            alert("EL consumo de su vivienda es de "+n+"kWh lo que da un consumo medio");
+        }else if(n>=300){
+            alert("EL consumo de su vivienda es de "+n+"kWh lo que da un consumo alto");
+        }else{
+            alert("El consumo ingresado no es valido");
+        }
+    </script>
+</body>
+</html>

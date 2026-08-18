@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let respuesta = prompt("¿Desea ingresar una venta? SI/NO");
+
+        let contador = 0;
+        let suma = 0;
+
+        while (respuesta != "NO") {
+
+            let venta = parseFloat(prompt("Ingrese el valor de la venta: "));
+
+            contador++;
+            suma = suma + venta;
+
+            respuesta = prompt("¿Desea ingresar otra venta? SI/NO");
+        }
+
+        alert("Cantidad de ventas: " + contador);
+        alert("Valor total vendido: $" + suma);
+    </script>
+</body>
+
+</html>
