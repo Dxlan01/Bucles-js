@@ -9,8 +9,16 @@
     <script>
         let valor= parseInt(prompt("Ingrese el valor de su compra: "));
         let desc=(valor*10/100);
+        let desc1=(valor*20/100);
         if(valor<=100000){
-            alert("No tiene descuento");
+            alert("No tiene descuento. Total a pagar: "+valor);
+        }else if(valor>100000 && valor<299999){
+            alert("Su valor de compra es de "+valor+" y tiene un descuento del 10%. Total a pagar es de: "+desc);
+        }
+        else if(valor>300000){
+            alert("Su valor de compra es de "+valor+" y tiene un descuento del 20%. Total a pagar es de: "+desc1);
+        }else{
+            alert("El valor ingresado no es valido")
         }
     </script>
 </body>

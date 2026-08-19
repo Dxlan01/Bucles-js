@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Ingrese la velocidad de su vehiculo: "));
+        if (n <= 40) {
+            alert("La velocidad de su vehiculo es: " + n + " Km/h. Esta velocidad es baja");
+        } else if (n > 40 && n <= 80) {
+            alert("La velocidad de su vehiculo es: " + n + " Km/h. Esta velocidad es normal");
+        } else if (n > 80 && n <= 100) {
+            alert("La velocidad de su vehiculo es: " + n + " Km/h. Esta velocidad es alta");
+        } else {
+            alert("La velocidad de su vehiculo es: " + n + " Km/h. Esta velocidad es excesiva");
+        }
+    </script>
+</body>
+
+</html>
