@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.Solicitar el porcentaje de la bateria
+        //2.Condicionar que si la bateria esta entre 0 y 10 decir que es bateria critica
+        //3.Condicionar que si la bateria esta entre 11 y 30 decir que es bateria baja
+        //4.Condicionar que si la bateria esta entre 31 y 70 decir que es bateria normal
+        //5.Condicionar que si la bateria esta entre 71 y 100 decir que la bateria es alta
+        //6.Si se pone cualquier otro porcentaje condicionar que es un porcentaje invalido
+        let porcentaje=Number(prompt("Ingrese el porcentaje de su bateria: "));
+        if(porcentaje<=10){
+            alert("Bateria critica");
+        }else if(porcentaje>=11 && porcentaje<=30){
+            alert("Bateria baja");
+        }else if(porcentaje>=31 && porcentaje<=70){
+            alert("Bateria normal");
+        }else if(porcentaje>=71 && porcentaje<=100){
+            alert("Bateria alta");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1. Pedir el valor de la compra.
+        //2. Si el valor cuesta menos de 50.000 condicionar que el envio sea de 8.000
+        //3. mostrar el valor y el coste del envio y el total
+        //4. Si el valor de la compra es entre 50.000 y 149.999 condicionar que el envio sea de 5.000
+        //5. repetir  paso 3
+        //6. Si el valor de la compra es mayor a 150.000 condicionar el valor del envio sea gratis
+        //7. Repetir paso 3
+        //"El valor de su compra es: "+valor+" por lo que su envio es de: $5.000. Total a pagar: "+envio2
+        let valor = Number(prompt("Ingrese el valor de su compra:"));
+        let envio1 = valor + 8000;
+        let envio2 = valor + 5000;
+        if (valor <= 50000) {
+            alert("El valor de su compra es: $"+valor.toLocaleString('es-CO')+" por lo que su envio es de: $8.000. Total a pagar: $"+envio1.toLocaleString('es-CO'));
+        } else if (valor > 50000 && valor < 149999) {
+            alert("El valor de su compra es: $"+valor.toLocaleString('es-CO')+" por lo que su envio es de: $5.000. Total a pagar: $"+envio2.toLocaleString('es-CO'));
+        }
+        else if (valor > 150000) {
+            alert("El valor de su compra es: $"+valor.toLocaleString('es-CO')+" por lo que su envio es Gratis. Total a pagar: $"+valor.toLocaleString('es-CO'));
+        } else {
+            alert("El valor ingresado no es valido")
+        }
+    </script>
+</body>
+
+</html>
